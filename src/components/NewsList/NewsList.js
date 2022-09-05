@@ -3,11 +3,11 @@ import NewsItem from "../NewsItem/NewsItem";
 
 export const NewsList = ({ newsItems }) => {
   return (
-    <ul>
+    <div className="container">
       {newsItems.map((newsItem, index) => (
         <NewsItem key={index} {...newsItem} />
       ))}
-    </ul>
+    </div>
   );
 };
 

@@ -26,8 +26,7 @@ export const News = () => {
   }, [country, category, filter]);
 
   return (
-    <div className="news">
-      <p>News</p>
+    <div>
       <NewsList newsItems={newsItems} />
     </div>
   );
