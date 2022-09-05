@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import NewsList from "../NewsList/NewsList";
 import { getNewsAsync } from "../../services/newsapiservice";
 
-export const News = () => {
+export const News = ({ cat }) => {
   const [newsItems, setNewsItems] = useState([]);
   const [country, setCountry] = useState("de");
   const [category, setCategory] = useState("general");
